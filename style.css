@@ -1,0 +1,58 @@
+#score {
+  text-align: center;
+}
+#game {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url(https://imgproxy.geocaching.com/eac4ed01c3c8636d4e9dc2ea37fccba77fe01dbe?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FAh7285f_byI%2Fmaxresdefault.jpg);
+  background-size: cover;
+}
+#cat {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 200px;
+  background-image: url(images/cat.png);
+  background-size: cover;
+}
+#ghost {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 125px;
+  left: 520px;
+  background-image: url(images/ghost.png);
+  background-size: cover;
+  animation: ghost 1.85s infinite;
+}
+
+@keyframes ghost {
+  0% {
+    left: 520px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0% {
+    top: 200px;
+  }
+  50% {
+    top: 65px;
+  }
+  75% {
+    top: 65px;
+  }
+
+  100% {
+    top: 200px;
+  }
+}
