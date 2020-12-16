@@ -32,6 +32,7 @@ setInterval(() => {
 
     if (ghostLeft < 50 && ghostLeft > 0 && catTop > 100 ) {
         alert(`Game over! \n \n You got a score of: ${score.innerText} Play Again?`);
+        location.reload();
     } 
 }, 50);
 
